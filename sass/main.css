@@ -1,0 +1,144 @@
+.mainPage {
+  background-image: url(../images/back.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+header div span {
+  font-size: 50px;
+  font-family: "Pacifico", cursive;
+  color: white;
+}
+header div ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header div ul li {
+  position: relative;
+  list-style: none;
+}
+header div ul li a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
+header div ul li:not(li:last-child)::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  top: 0px;
+  right: -10px;
+  background-color: white;
+}
+
+.sweets {
+  padding: 20px 0px;
+  background-color: white;
+}
+.sweets .links ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.sweets .links ul li {
+  list-style: none;
+}
+.sweets .links ul li a {
+  text-decoration: none;
+  color: #666;
+  text-shadow: 1px 1px 3px;
+}
+.sweets .images {
+  padding: 0px 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 35px;
+}
+.sweets .images img {
+  width: 100%;
+  height: 350px;
+}
+
+article .products, aside div {
+  border-bottom: 1px solid #acabab;
+}
+
+aside {
+  padding: 20px;
+}
+aside div {
+  padding: 20px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+aside div img {
+  width: 100%;
+  height: 250px;
+}
+
+article {
+  margin: 20px 0px;
+}
+article .products > p {
+  color: white;
+  font-size: 24px;
+  font-family: "Pacifico", cursive;
+  margin-bottom: 20px;
+}
+article .products .pro {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px 70px;
+}
+article .products .pro .box .img {
+  padding: 5px;
+  background-color: white;
+}
+article .products .pro .box .img img {
+  max-width: 100%;
+  height: 240px;
+  border: 1px solid #777;
+}
+article .products .pro .box p {
+  color: white;
+  font-size: 13px;
+  margin: 10px 0px;
+}
+article .products .pro .box span {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: white;
+  padding: 20px;
+}
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Pacifico", cursive;
+  color: rgb(165, 13, 137);
+}/*# sourceMappingURL=main.css.map */
